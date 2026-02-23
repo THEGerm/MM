@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji-Hoon - The Tech Baker</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        /* Importing a tech-themed monospace font */
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+        body {
+            font-family: 'Share Tech Mono', 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #0b0f19;
+            color: #d1d5db;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #111827;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
+            border: 1px solid #1f2937;
+        }
+        /* Part 1: Banner style */
+        .banner {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #00ffcc;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            /* Applying a filter to make the banner match the dark tech theme */
+            filter: grayscale(60%) sepia(20%) hue-rotate(180deg);
+        }
+        /* Part 2: Generic text style */
+        .intro-section {
+            padding: 15px 20px;
+            background-color: #1f2937;
+            margin-bottom: 20px;
+            border-left: 4px solid #00ffcc;
+            border-radius: 4px;
+        }
+        .intro-section p, .intro-section li {
+            font-size: 16px;
+            color: #d1d5db;
+        }
+        .intro-section ol {
+            padding-left: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .intro-section li {
+            margin-bottom: 12px;
+        }
+        /* Part 3: Character section style */
+        .character-section {
+            margin-bottom: 30px;
+            padding: 15px 20px;
+            background-color: #0b0f19;
+            border: 1px solid #00ffcc;
+            border-radius: 4px;
+            box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.05);
+        }
+        h2 {
+            color: #00ffcc;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px dashed #374151;
+            padding-bottom: 10px;
+        }
+        .accent-text {
+            color: #60a5fa;
+        }
+        /* Bottom: Private letter style */
+        .private-letter-notice {
+            background-color: #2a0a0a;
+            border: 2px dashed #ef4444;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            color: #ef4444;
+        }
+        .private-letter-notice h2 {
+            color: #ef4444;
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <img src="1771807162225.png" alt="The International Artisan Bread Championship Murder Mystery" class="banner">
+
+    <div id="intro-content" class="intro-section">
+        <p><i>Loading system parameters...</i></p>
+    </div>
+
+    <div class="character-section">
+        <h2>Ji-Hoon The Tech Baker (Played by Brian)</h2>
+        <p><span class="accent-text">Your Character:</span> You bake exclusively with sensors, data, and analytics, completely lacking the traditional touch. Your digital thermometer was found near the sink where Bartholomew was preparing his 15C water.</p>
+        <p><span class="accent-text">Costume Ideas:</span> Silicon Valley tech attire, a sleek turtleneck, jeans, and wearing safety goggles or carrying gadgets.</p>
+    </div>
+
+    <div class="private-letter-notice">
+        <h2>SYSTEM ALERT: PRIVATE LETTER</h2>
+        <p>Your private letter containing your secret motives, objectives, and clues is strictly confidential.</p>
+        <p>It will be handed to you in a sealed envelope upon your arrival at 113 Shinny Avenue, Stittsville.</p>
+        <p>Do not discuss your private instructions with anyone until the game officially begins.</p>
+    </div>
+
+</div>
+
+<script>
+    fetch('intro.md')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('System Error: Could not load intro.md');
+            }
+            return response.text();
+        })
+        .then(text => {
+            document.getElementById('intro-content').innerHTML = marked.parse(text);
+        })
+        .catch(error => {
+            document.getElementById('intro-content').innerHTML = '<p style="color:#ef4444;">Error 404: Introduction text not found.</p>';
+            console.error('Error fetching intro.md:', error);
+        });
+</script>
+
+</body>
+  </html>
+  
