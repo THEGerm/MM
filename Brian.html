@@ -33,7 +33,6 @@
             border-bottom: 2px solid #00ffcc;
             margin-bottom: 20px;
             border-radius: 4px;
-            /* Applying a filter to make the banner match the dark tech theme */
             filter: grayscale(60%) sepia(20%) hue-rotate(180deg);
         }
         /* Part 2: Generic text style */
@@ -71,9 +70,19 @@
             letter-spacing: 1px;
             border-bottom: 1px dashed #374151;
             padding-bottom: 10px;
+            font-weight: normal;
         }
         .accent-text {
             color: #60a5fa;
+        }
+        .item-title {
+            color: #00ffcc;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        p {
+            margin-top: 5px;
         }
         /* Bottom: Private letter style */
         .private-letter-notice {
@@ -87,6 +96,7 @@
         .private-letter-notice h2 {
             color: #ef4444;
             border-bottom: none;
+            font-weight: normal;
         }
     </style>
 </head>
@@ -102,8 +112,18 @@
 
     <div class="character-section">
         <h2>Ji-Hoon The Tech Baker (Played by Brian)</h2>
-        <p><span class="accent-text">Your Character:</span> You bake exclusively with sensors, data, and analytics, completely lacking the traditional touch. Your digital thermometer was found near the sink where Bartholomew was preparing his 15C water.</p>
-        <p><span class="accent-text">Costume Ideas:</span> Silicon Valley tech attire, a sleek turtleneck, jeans, and wearing safety goggles or carrying gadgets.</p>
+        
+        <span class="item-title">1. Your Background.</span>
+        <p>You are Ji-Hoon, a disruptive Silicon Valley transplant who views traditional baking as an inefficient, obsolete algorithm. You do not rely on touch or intuition; you code your dough. Your startup relies entirely on atmospheric sensors, hydration matrices, and predictive machine learning. You believe human error is the only thing holding bread back from perfection.</p>
+        
+        <span class="item-title">2. The Conflict.</span>
+        <p>Bartholomew Crust represented everything you despise about the old culinary guard. He mocked your presentation at a recent symposium when your automated Cuisinart mixing array suffered a critical malfunction. You entered this championship specifically to prove your data-driven approach is objectively superior to his archaic 1:1 ratio Elrond starter. You have been obsessively reverse-engineering his methods, setting up covert sensors around his station to monitor his precise variables: a 21.5C ambient kitchen temperature, 20C flour, and 15C water for his sink bulk fermentation.</p>
+
+        <span class="item-title">3. The Clue.</span>
+        <p>The local police are already suspicious of you. Your proprietary digital thermometer was found abandoned directly next to the sink where Bartholomew was preparing his 15C water just moments before his death.</p>
+
+        <span class="item-title">4. Costume Ideas.</span>
+        <p>Silicon Valley tech attire. Wear a sleek black turtleneck, dark jeans, and minimalist sneakers. Carry a tablet or smartphone at all times, and consider wearing safety goggles or bringing digital probes to measure your dinner.</p>
     </div>
 
     <div class="private-letter-notice">
@@ -133,5 +153,4 @@
 </script>
 
 </body>
-  </html>
-  
+</html>
