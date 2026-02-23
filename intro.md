@@ -1,4 +1,4 @@
-1. Event Schedule: Friday, February 27. Arrive at 18h30 for apero. Dinner and the investigation will begin at 19h00. The final vote will take place at 21h00.
+1. **Event Schedule**: Friday, February 27. Arrive at 18h30 for apero. Dinner and the investigation will begin at 19h00. The final vote will take place at 21h00.
 
 2. Location: 113 Shinny Avenue, Stittsville.
 
