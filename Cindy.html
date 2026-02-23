@@ -12,6 +12,7 @@
             padding: 20px;
             background-color: #f9f6f0;
             color: #333;
+            line-height: 1.6;
         }
         .container {
             max-width: 800px;
@@ -29,17 +30,30 @@
             margin-bottom: 20px;
             border-radius: 4px;
         }
-        /* Part 2: Generic text style */
+        /* Part 2: Generic text style (Updated for Markdown injection) */
         .intro-section {
-            padding: 15px;
-            background-color: #eef;
+            padding: 15px 20px;
+            background-color: #f4f6f8;
             margin-bottom: 20px;
-            border-left: 4px solid #55a;
+            border-left: 4px solid #5c6bc0;
+            border-radius: 4px;
+        }
+        .intro-section p, .intro-section li {
+            font-size: 16px;
+            color: #333;
+        }
+        .intro-section ol {
+            padding-left: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .intro-section li {
+            margin-bottom: 12px;
         }
         /* Part 3: Character section style */
         .character-section {
             margin-bottom: 30px;
-            padding: 15px;
+            padding: 15px 20px;
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -54,6 +68,7 @@
             color: #c00;
         }
     </style>
+    
 </head>
 <body>
 
