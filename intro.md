@@ -7,4 +7,3 @@
 3. The Game Mechanics. Below is your personalized public letter. You are encouraged to share this freely and discuss your character with the other guests before the party. However, you will receive a secret private letter upon your arrival tonight. Do not discuss your private instructions until the game officially begins.
 
 4. The Circumstances. The reigning baking champion, Bartholomew Crust, has been found dead, face-down in a sack of flour next to his prized 40-year-old sourdough starter, Elrond. With the police delayed, you must dine, interrogate your fellow competitors, and catch the killer before dessert.
-5. 
