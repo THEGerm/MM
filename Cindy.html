@@ -6,41 +6,45 @@
     <title>Madam Lin - The Critic</title>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <style>
+        /* Importing elegant fonts for an editorial/fashion feel */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Lato&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f9f6f0;
-            color: #333;
-            line-height: 1.6;
+            background-color: #fdfbf7;
+            color: #2c2c2c;
+            line-height: 1.7;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 2px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid #722f37;
         }
         /* Part 1: Banner style */
         .banner {
             width: 100%;
             height: auto;
-            border-bottom: 2px solid #ccc;
-            margin-bottom: 20px;
-            border-radius: 4px;
+            border-bottom: 1px solid #e0dcd3;
+            margin-bottom: 25px;
+            /* Subtle sepia tone for a refined look */
+            filter: sepia(20%) contrast(110%);
         }
-        /* Part 2: Generic text style (Updated for Markdown injection) */
+        /* Part 2: Generic text style */
         .intro-section {
-            padding: 15px 20px;
-            background-color: #f4f6f8;
-            margin-bottom: 20px;
-            border-left: 4px solid #5c6bc0;
-            border-radius: 4px;
+            padding: 20px;
+            background-color: #f9f8f6;
+            margin-bottom: 25px;
+            border-left: 3px solid #d4af37;
         }
         .intro-section p, .intro-section li {
             font-size: 16px;
-            color: #333;
+            color: #4a4a4a;
         }
         .intro-section ol {
             padding-left: 20px;
@@ -52,23 +56,50 @@
         }
         /* Part 3: Character section style */
         .character-section {
-            margin-bottom: 30px;
-            padding: 15px 20px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            margin-bottom: 35px;
+            padding: 25px;
+            background-color: #ffffff;
+            border: 1px solid #e0dcd3;
+            box-shadow: inset 0 0 15px rgba(114, 47, 55, 0.03);
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #722f37;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #e0dcd3;
+            padding-bottom: 15px;
+            margin-top: 0;
+            font-weight: normal;
+            text-align: center;
+        }
+        .item-title {
+            font-family: 'Playfair Display', serif;
+            color: #722f37;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            display: block;
+            font-size: 1.2em;
+        }
+        p {
+            margin-top: 5px;
         }
         /* Bottom: Private letter style */
         .private-letter-notice {
-            background-color: #fee;
-            border: 2px dashed #c00;
-            padding: 20px;
+            background-color: #fdf5f5;
+            border: 1px solid #722f37;
+            padding: 25px;
             text-align: center;
-            border-radius: 8px;
-            color: #c00;
+            color: #722f37;
+        }
+        .private-letter-notice h2 {
+            color: #722f37;
+            border-bottom: none;
+            font-weight: normal;
+            margin-bottom: 10px;
+            padding-bottom: 0;
         }
     </style>
-    
 </head>
 <body>
 
@@ -77,13 +108,23 @@
     <img src="1771807162225.png" alt="The International Artisan Bread Championship Murder Mystery" class="banner">
 
     <div id="intro-content" class="intro-section">
-        <p><i>Loading game instructions...</i></p>
+        <p><i>Loading event details...</i></p>
     </div>
 
     <div class="character-section">
         <h2>Madam Lin The Critic (Played by Cindy)</h2>
-        <p><strong>Your Character:</strong> You are the most feared culinary critic in the world. Bartholomew recently humiliated you in front of your peers by serving a dense, under-proofed loaf. You were seen throwing something into the trash can near his station shortly before he collapsed into the flour sack.</p>
-        <p><strong>Costume Ideas:</strong> High-fashion, slightly intimidating attire. Bring a small notebook and pen to jot down your harsh critiques.</p>
+        
+        <span class="item-title">1. Your Background.</span>
+        <p>You are Madam Lin, the undisputed sovereign of the culinary review world. Your syndicated column, "The Crumb," is read by millions. A mere sigh from you can shutter a bakery; a nod of approval guarantees a lifetime of success. You are accustomed to being treated like royalty, with executive chefs trembling as you take your first bite of their creations.</p>
+        
+        <span class="item-title">2. The Conflict.</span>
+        <p>Bartholomew Crust is the only baker who has ever dared to defy you. At the opening gala of this very championship, he served you a dense, horribly under-proofed loaf. When you gave him a harsh critique, he laughed in your face and loudly announced to the room that your palate was "as sophisticated as a wet sponge." The public humiliation was absolute. You swore he would pay for his insolence and lack of respect for your authority.</p>
+
+        <span class="item-title">3. The Clue.</span>
+        <p>You were seen lurking near his competition station right before he collapsed into the flour sack. Worse, a fellow competitor witnessed you hastily throwing a suspicious empty foil packet into the trash can.</p>
+
+        <span class="item-title">4. Costume Ideas.</span>
+        <p>Intimidating, high-fashion elegance. Think oversized designer sunglasses, an impeccable silk scarf, and tailored attire. Carry a sophisticated Moleskine notebook and an expensive pen to silently judge everyone else's outfits and alibis throughout the evening.</p>
     </div>
 
     <div class="private-letter-notice">
@@ -96,20 +137,18 @@
 </div>
 
 <script>
-    // Fetch the Markdown file from the same directory
     fetch('intro.md')
         .then(response => {
             if (!response.ok) {
-                throw new Error('Could not load intro.md');
+                throw new Error('System Error: Could not load intro.md');
             }
             return response.text();
         })
         .then(text => {
-            // Convert the Markdown text to HTML and inject it into the div
             document.getElementById('intro-content').innerHTML = marked.parse(text);
         })
         .catch(error => {
-            document.getElementById('intro-content').innerHTML = '<p style="color:red;">Error loading introduction text.</p>';
+            document.getElementById('intro-content').innerHTML = '<p style="color:#722f37;">Error: Introduction text not found.</p>';
             console.error('Error fetching intro.md:', error);
         });
 </script>
