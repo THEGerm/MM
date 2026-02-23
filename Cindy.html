@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madam Lin - The Critic</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f6f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        /* Part 1: Banner style */
+        .banner {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+        }
+        /* Part 2: Generic text style */
+        .intro-section {
+            padding: 15px;
+            background-color: #eef;
+            margin-bottom: 20px;
+            border-left: 4px solid #55a;
+        }
+        /* Part 3: Character section style */
+        .character-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .character-image {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        .character-text {
+            flex: 1;
+        }
+        /* Bottom: Private letter style */
+        .private-letter-notice {
+            background-color: #fee;
+            border: 2px dashed #c00;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            color: #c00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <img src="banner.jpg" alt="The International Artisan Bread Championship Murder Mystery" class="banner">
+
+    <div id="intro-content" class="intro-section">
+        <p><i>Loading game instructions...</i></p>
+    </div>
+
+    <div class="character-section">
+        <img src="critic_image.jpg" alt="Generic look for the critic" class="character-image">
+        
+        <div class="character-text">
+            <h2>Madam Lin The Critic (Played by Cindy)</h2>
+            <p><strong>Your Character:</strong> You are the most feared culinary critic in the world. Bartholomew recently humiliated you in front of your peers by serving a dense, under-proofed loaf. You were seen throwing something into the trash can near his station shortly before he collapsed into the flour sack.</p>
+            <p><strong>Costume Ideas:</strong> High-fashion, slightly intimidating attire. Bring a small notebook and pen to jot down your harsh critiques.</p>
+        </div>
+    </div>
+
+    <div class="private-letter-notice">
+        <h2>SECRET: PRIVATE LETTER</h2>
+        <p>Your private letter containing your secret motives, objectives, and clues is strictly confidential.</p>
+        <p>It will be handed to you in a sealed envelope upon your arrival at 113 Shinny Avenue, Stittsville.</p>
+        <p>Do not discuss your private instructions with anyone until the game officially begins.</p>
+    </div>
+
+</div>
+
+<script>
+    // Fetch the Markdown file from the same directory
+    fetch('intro.md')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Could not load intro.md');
+            }
+            return response.text();
+        })
+        .then(text => {
+            // Convert the Markdown text to HTML and inject it into the div
+            document.getElementById('intro-content').innerHTML = marked.parse(text);
+        })
+        .catch(error => {
+            document.getElementById('intro-content').innerHTML = '<p style="color:red;">Error loading introduction text.</p>';
+            console.error('Error fetching intro.md:', error);
+        });
+</script>
+
+</body>
+</html>
